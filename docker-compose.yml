@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  flappy-bird:
+    image: ghcr.io/nafies-bithealth/flappy-bird:latest
+    container_name: flappy-bird
+    restart: unless-stopped
+    ports:
+      - "8089:80"
